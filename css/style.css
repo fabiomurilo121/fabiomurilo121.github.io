@@ -8,3 +8,8 @@
 	background: url('../images/loader.gif') 50% 50% no-repeat white;
 	background-color: #621FF5;
 }
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
