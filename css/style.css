@@ -13,3 +13,15 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
+.minha-fonte{
+	font-family: 'Alata', sans-serif;
+}
+
+.cor{
+	background: #03DAC6;
+}
+
+.cor-meio{
+	background: #018786;
+}
