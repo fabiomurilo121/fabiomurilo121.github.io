@@ -22,11 +22,21 @@
 <script>
     var music = document.getElementById("myAudio");
     function playAudio() {
-        if (music.paused && music.currentTime >= 0 && !music.ended) {
+
+        var isPlaying = music.currentTime > 0 && !music.paused && !music.ended
+            && music.readyState > music.HAVE_CURRENT_DATA;
+
+        if (!isPlaying) {
             music.play();
-        } else {
+        }else{
             music.pause();
         }
+
+        // if (music.paused && music.currentTime >= 0 && !music.ended) {
+        //     music.play();
+        // } else {
+        //     music.pause();
+        // }
     }
 </script>
 
